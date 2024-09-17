@@ -116,79 +116,82 @@ class ViewController: UIViewController {
         totalPriceTextViewOutlet.text = String(totalCost)
     }
     
-//    @IBAction func passwordButtonAction(_ sender: UIButton) {
-//        if passwordTextFieldOutlet.text == "cogitoErgoSum"{
-//            passwordTextFieldOutlet.isHidden = true
-//            submitPasswordButtonOutlet.isHidden = true
-//            adminAreaLabelOutlet.isHidden = false
-//            enterItemTextFieldOutlet.isHidden = false
-//            enterPriceTextFieldOutlet.isHidden = false
-//            addButtonOutlet.isHidden = false
-//            deleteButtonOutlet.isHidden = false
-//        }
-//    }
-//    
-//    @IBAction func addButtonAction(_ sender: UIButton) {
-//        var invalidError = false
-//        
-//        for i  in food{
-//            if i == enterItemTextFieldOutlet.text{
-//                invalidError = true
-//            }
-//        }
-//        
-//        if invalidError{
-//            return
-//        }
-//        
-//        if Double(enterPriceTextFieldOutlet.text!) == nil || Double(enterPriceTextFieldOutlet.text!)! <= 0{
-//            return
-//        }
-//        
-//        
-//        food.append(enterItemTextFieldOutlet.text!)
-//        price.append(Double(enterPriceTextFieldOutlet.text!)!)
-//        
-//        listTextViewOutlet.text += food[food.count - 1] + ": " + String(price[price.count - 1]) + "\n"
-//    }
-//    
-//    @IBAction func deleteButtonAction(_ sender: UIButton) {
-//        for i  in 0..<food.count{
-//            if itemTextFieldOutlet.text == food[i]{
-//                food.remove(at: i)
-//                price.remove(at: i)
-//                
-//                itemTextFieldOutlet.text = ""
-//                
-//                for q  in 0..<food.count{
-//                    listTextViewOutlet.text += food[q] + ": " + String(price[q]) + "\n"
-//                }
-//                
-//                
-//                for r  in 0..<shoppingCart.count{
-//                    if shoppingCart[r] == food[i]{
-//                        shoppingCart.remove(at: r)
-//                        
-//                        for s  in 0..<shoppingCart.count{
-//                            shoppingCartTextViewOutlet.text += shoppingCart[s] + ": " + String(quantity[s]) + "\n"
-//                        }
-//                        
-//                        var totalCost = 0.0
-//                        
-//                        for i  in 0..<shoppingCart.count{
-//                            totalCost += Double(quantity[i]) * price[i]
-//                        }
-//                        
-//                        totalPriceTextViewOutlet.text = String(totalCost)
-//                        
-//                        break
-//                    }
-//                }
-//                
-//                break
-//            }
-//        }
-//    }
+    @IBAction func passwordButtonAction(_ sender: UIButton) {
+        if passwordTextFieldOutlet.text == "cogitoErgoSum"{
+            passwordTextFieldOutlet.isHidden = true
+            submitPasswordButtonOutlet.isHidden = true
+            adminAreaLabelOutlet.isHidden = false
+            enterItemTextFieldOutlet.isHidden = false
+            enterPriceTextFieldOutlet.isHidden = false
+            addButtonOutlet.isHidden = false
+            deleteButtonOutlet.isHidden = false
+        }
+    }
+    
+    @IBAction func addButtonAction(_ sender: UIButton) {
+        var invalidError = false
+        
+        for i  in food{
+            if i == enterItemTextFieldOutlet.text{
+                invalidError = true
+            }
+        }
+        
+        if invalidError{
+            return
+        }
+        
+        if Double(enterPriceTextFieldOutlet.text!) == nil || Double(enterPriceTextFieldOutlet.text!)! <= 0{
+            return
+        }
+        
+        
+        food.append(enterItemTextFieldOutlet.text!)
+        price.append(Double(enterPriceTextFieldOutlet.text!)!)
+        
+        listTextViewOutlet.text += food[food.count - 1] + ": " + String(price[price.count - 1]) + "\n"
+    }
+    
+    @IBAction func deleteButtonAction(_ sender: UIButton) {
+        for i  in 0..<food.count{
+            if enterItemTextFieldOutlet.text == food[i]{
+                for r  in 0..<shoppingCart.count{
+                    if shoppingCart[r] == food[i]{
+                        shoppingCart.remove(at: r)
+                        shoppingCartPrice.remove(at: r)
+                        quantity.remove(at: r)
+                        
+                        shoppingCartTextViewOutlet.text = ""
+                        
+                        for s  in 0..<shoppingCart.count{
+                            shoppingCartTextViewOutlet.text += shoppingCart[s] + ": " + String(quantity[s]) + "\n"
+                        }
+                        
+                        var totalCost = 0.0
+                        
+                        for i  in 0..<shoppingCart.count{
+                            totalCost += Double(quantity[i]) * shoppingCartPrice[i]
+                        }
+                        
+                        totalPriceTextViewOutlet.text = String(totalCost)
+                        
+                        break
+                    }
+                }
+                
+                food.remove(at: i)
+                price.remove(at: i)
+                
+                listTextViewOutlet.text = ""
+                
+                for q  in 0..<food.count{
+                    listTextViewOutlet.text += food[q] + ": " + String(price[q]) + "\n"
+                }
+                
+                break
+            }
+        }
+    }
     
 
 
