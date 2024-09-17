@@ -32,17 +32,17 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d92-bo-sgc">
-                                        <rect key="frame" x="0.0" y="81.666666666666657" width="393" height="277.66666666666674"/>
+                                        <rect key="frame" x="0.0" y="81.666666666666643" width="393" height="209.33333333333337"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Quantity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hw0-J6-1V2">
-                                        <rect key="frame" x="0.0" y="359.33333333333331" width="393" height="34"/>
+                                        <rect key="frame" x="0.0" y="291" width="393" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAF-kE-4FS">
-                                        <rect key="frame" x="0.0" y="393.33333333333331" width="393" height="34.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="325" width="393" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <attributedString key="attributedTitle">
@@ -60,19 +60,19 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkz-tI-Hef">
-                                        <rect key="frame" x="0.0" y="427.66666666666669" width="393" height="50"/>
+                                        <rect key="frame" x="0.0" y="359.33333333333331" width="393" height="50"/>
                                         <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shopping Cart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSO-pR-KBn">
-                                        <rect key="frame" x="0.0" y="477.66666666666663" width="393" height="25.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="409.33333333333331" width="393" height="25.333333333333314"/>
                                         <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
                                         <color key="textColor" systemColor="systemBrownColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iHM-3M-MBc">
-                                        <rect key="frame" x="0.0" y="503" width="393" height="128"/>
+                                        <rect key="frame" x="0.0" y="434.66666666666669" width="393" height="128.00000000000006"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="JR5-9N-o7p"/>
                                         </constraints>
@@ -81,7 +81,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uKj-Vt-rg6">
-                                        <rect key="frame" x="0.0" y="631" width="393" height="128"/>
+                                        <rect key="frame" x="0.0" y="562.66666666666663" width="393" height="128"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="6c7-7Y-r90"/>
                                         </constraints>
@@ -89,6 +89,92 @@
                                         <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k03-hH-Aoc">
+                                        <rect key="frame" x="0.0" y="690.66666666666663" width="393" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naz-jd-O46">
+                                        <rect key="frame" x="0.0" y="724.66666666666663" width="393" height="34.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Submit Password">
+                                                    <attributes>
+                                                        <font key="NSFont" size="16" name="Chalkduster"/>
+                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" systemColor="systemGreenColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="passwordButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ocx-Di-a1o"/>
+                                        </connections>
+                                    </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Admin Area" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5a7-5t-U30" userLabel="Admin Area">
+                                        <rect key="frame" x="0.0" y="759" width="393" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="am3-yI-YFS">
+                                        <rect key="frame" x="0.0" y="759" width="393" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FjK-Fy-adn">
+                                        <rect key="frame" x="0.0" y="759" width="393" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIg-ZD-VTD">
+                                        <rect key="frame" x="0.0" y="759" width="393" height="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Add">
+                                                    <attributes>
+                                                        <font key="NSFont" size="16" name="Chalkduster"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" systemColor="systemGreenColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="40k-pd-69R"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkk-vz-fTK">
+                                        <rect key="frame" x="0.0" y="759" width="393" height="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="D">
+                                                    <attributes>
+                                                        <font key="NSFont" size="12" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="e">
+                                                    <attributes>
+                                                        <font key="NSFont" size="16" name="Chalkduster"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="lete">
+                                                    <attributes>
+                                                        <font key="NSFont" size="12" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="deleteButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUR-rr-r7j"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -102,11 +188,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addButtonOutlet" destination="EIg-ZD-VTD" id="xTo-Zy-w0y"/>
+                        <outlet property="adminAreaLabelOutlet" destination="5a7-5t-U30" id="mbC-FK-HV0"/>
+                        <outlet property="deleteButtonOutlet" destination="xkk-vz-fTK" id="8ES-vy-5no"/>
+                        <outlet property="enterItemTextFieldOutlet" destination="am3-yI-YFS" id="WZN-7L-WBH"/>
+                        <outlet property="enterPriceTextFieldOutlet" destination="FjK-Fy-adn" id="6FA-B6-eYR"/>
                         <outlet property="errorLabelOutlet" destination="hkz-tI-Hef" id="A2g-oK-U9N"/>
                         <outlet property="itemTextFieldOutlet" destination="d92-bo-sgc" id="TUW-Ob-Sq5"/>
                         <outlet property="listTextViewOutlet" destination="z4M-KT-E7q" id="eQt-c0-1gs"/>
+                        <outlet property="passwordTextFieldOutlet" destination="k03-hH-Aoc" id="3iJ-DQ-GGW"/>
                         <outlet property="quantityTextFieldOutlet" destination="hw0-J6-1V2" id="UyT-KJ-UXj"/>
                         <outlet property="shoppingCartTextViewOutlet" destination="iHM-3M-MBc" id="ppX-ss-4yk"/>
+                        <outlet property="submitPasswordButtonOutlet" destination="naz-jd-O46" id="bH1-N6-jc3"/>
                         <outlet property="totalPriceTextViewOutlet" destination="uKj-Vt-rg6" id="mj2-id-E5J"/>
                     </connections>
                 </viewController>
